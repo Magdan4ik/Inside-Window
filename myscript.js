@@ -27,39 +27,39 @@ var x = setInterval(function() {
 
 
 
-// GOOGLE MAP
-      function initMap() {
+// // GOOGLE MAP
+//       function initMap() {
 
-		var uluru1 = {lat: 50.453104, lng: 30.589099};
-		var uluru2 = {lat: 50.419858, lng: 30.471992};
-		var uluru3 = {lat: 50.426480, lng: 30.520710};
+// 		var uluru1 = {lat: 50.453104, lng: 30.589099};
+// 		var uluru2 = {lat: 50.419858, lng: 30.471992};
+// 		var uluru3 = {lat: 50.426480, lng: 30.520710};
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 50.436958, lng: 30.539909},
-          zoom: 12
-        });
+//         var map = new google.maps.Map(document.getElementById('map'), {
+//           center: {lat: 50.436958, lng: 30.539909},
+//           zoom: 12
+//         });
 
-		var image = 'img/map-marker.png';
+// 		var image = 'img/map-marker.png';
 
-        var marker = new google.maps.Marker({
-      	position: uluru1,
-      	map: map,
-      	icon: image,
-      	animation: google.maps.Animation.BOUNCE
-  		});
+//         var marker = new google.maps.Marker({
+//       	position: uluru1,
+//       	map: map,
+//       	icon: image,
+//       	animation: google.maps.Animation.BOUNCE
+//   		});
 
-        var marker = new google.maps.Marker({
-      	position: uluru2,
-      	map: map,
-      	icon: image,
-      	animation: google.maps.Animation.BOUNCE
-  		});
+//         var marker = new google.maps.Marker({
+//       	position: uluru2,
+//       	map: map,
+//       	icon: image,
+//       	animation: google.maps.Animation.BOUNCE
+//   		});
 
-        var marker = new google.maps.Marker({
-      	position: uluru3,
-      	map: map,
-      	icon: image,
-      	animation: google.maps.Animation.BOUNCE
-  		});  		
+//         var marker = new google.maps.Marker({
+//       	position: uluru3,
+//       	map: map,
+//       	icon: image,
+//       	animation: google.maps.Animation.BOUNCE
+//   		});  		
 
-      }
+//       }
