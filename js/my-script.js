@@ -36,6 +36,17 @@
 
       }
 
+
+
+// MOBILE MENU
+    $(document).ready(function(){
+      $(".menu__icon").click(function(){
+          $(".menu").toggleClass("menu__open");
+      });
+    });
+
+
+
 // TIMER
 
 // Set the date we're counting down to
