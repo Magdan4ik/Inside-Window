@@ -8,22 +8,25 @@
 	<link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|Roboto:400,700,900&amp;subset=cyrillic" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
+
   	<header class="header">
   		<div class="container">
   			<div class="row">
   				<div class="col-md-3 d-flex align-items-center">
-  					<a href="index.html" class="header__logo"><img src="img/logo.svg" alt="Inside Windows"></a>
+  					<a href="index.html" class="header__logo"><img src="img/logo.png" alt="Inside Windows"></a>
   					<h1 class="header__title">INSIDE WINDOWS</h1>
+
   				</div>
   				<div class="col-md-3 d-flex align-items-center">
   					<p class="header__descr">Окна от <strong>лучших</strong> мировых производителей</p>
   				</div>
-  				<div class="col-md-3 d-flex align-items-center justify-content-end">
+  				<div class="col-md-3 d-flex align-items-center justify-content-center">
   					<div class="header__tel">+ 38 (044) 812-23-12</div>
   				</div>
-  				<div class="col-md-3 d-flex align-items-center justify-content-end">
+  				<div class="col-md-3 d-flex align-items-center justify-content-center">
   					<button class="btn btn--header" type="button">Заказать звонок</button>
   				</div>
   			</div>
@@ -33,7 +36,7 @@
   	<nav class="main-nav d-flex align-items-center">
 		<div class="container">
 		  	<div class="row">
-		  		<div class="col-md-12">
+		  		<div class="col-md-12 menu">
 			  		<ul class="main-nav__list">
 	  					<li><a href="index.html">Главная</a></li>
 	  					<li><a href="#">Продукция</a></li>
@@ -91,17 +94,17 @@
 					<h2 class="order__title">Как сделать заказ?</h2>
 					<ul class="order__list d-flex align-items-end justify-content-around">
 						<li>
-							<img src="img/opened-window.svg" alt="Параметры окна">
+							<img src="img/opened-window.png" alt="Параметры окна">
 							<div class="order__list__title">Выберите параметры окна</div>
 							<div class="order__list__nav"></div>
 						</li>
 						<li>
-							<img src="img/delivery-truck.svg" alt="Способ доставки">
+							<img src="img/delivery-truck.png" alt="Способ доставки">
 							<div class="order__list__title">Выберите способ доставки</div>
 							<div class="order__list__nav order__list__nav--gray"></div>
 						</li>
 						<li>
-							<img src="img/package-for-delivery.svg" alt="Получите заказ">
+							<img src="img/package-for-delivery.png" alt="Получите заказ">
 							<div class="order__list__title">Получите свой заказ</div>
 						</li>
 					</ul>
@@ -193,8 +196,8 @@
 						<li><button type="button" class="catalog__filters__btn">Витраж</button></li>
 					</ul>
 				</div>
-				<div class="w-100"></div>				
-				<div class="col-md-3">
+				<div class="w-100"></div>
+				<div class="col-sm-6 col-lg-3">
 					<div class="catalog__item">
 						<figure class="catalog__item__img"><img src="img/catalog-img-1.jpg" alt="Окно Глухое"></figure>
 						<ul class="catalog__item__imgs">
@@ -207,7 +210,7 @@
 						<div class="catalog__item__calc"><a href="#" class="btn btn--calc">Калькулятор</a></div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-6 col-lg-3">
 					<div class="catalog__item">
 						<figure class="catalog__item__img"><img src="img/catalog-img-2.jpg" alt="Окно Глухое"></figure>
 						<ul class="catalog__item__imgs">
@@ -220,7 +223,7 @@
 						<div class="catalog__item__calc"><a href="#" class="btn btn--calc">Калькулятор</a></div>
 					</div>					
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-6 col-lg-3">
 					<div class="catalog__item">
 						<figure class="catalog__item__img"><img src="img/catalog-img-1.jpg" alt="Окно Глухое"></figure>
 						<ul class="catalog__item__imgs">
@@ -233,7 +236,7 @@
 						<div class="catalog__item__calc"><a href="#" class="btn btn--calc">Калькулятор</a></div>
 					</div>					
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-6 col-lg-3">
 					<div class="catalog__item">
 						<figure class="catalog__item__img"><img src="img/catalog-img-2.jpg" alt="Окно Глухое"></figure>
 						<ul class="catalog__item__imgs">
@@ -261,7 +264,7 @@
 				<div class="w-100"></div>
 				<div class="col-md-7 popular__left">
 					<div class="row">
-						<div class="col-6">
+						<div class="col-sm-12 col-md-6">
 								<figure class="popular__left__img"><img src="img/popular-img.jpg" alt="Популярное"></figure>
 								<ul class="popular__left__imgs">
 									<li><button type="button" class="slide__btn__left "></button></li>
@@ -271,7 +274,7 @@
 									<li><button type="button" class="slide__btn__right"></button></li>
 								</ul>
 						</div>
-						<div class="col-6 pl-0">
+						<div class="col-sm-12 col-md-6 pl-0">
 							<a class="popular__left__title" href="#">Таким образом реализация намеченных плановых заданий способствует подготовки и реализации дальнейших направлений развития.</a>
 							<p>Образом новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании форм развития.</p>
 							<p>Повседневная практика показывает, что укрепление и развитие структуры играет важную роль в формировании существенных финансовых и административных условий. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации дальнейших направлений развития.</p>
@@ -283,7 +286,7 @@
 						<span class="popular__right__ribbon">Акция</span>
 						<p class="popular__right__title">Бесплатная доставка</p>
 						<div class="popular__right__info">
-							<img src="img/information.svg" alt="Информация">
+							<img src="img/information.png" alt="Информация">
 							<div class="popular__right__info__hover">
 								Развитие структуры играет важную роль в формировании существенных финансовых и административных условий. Опыт постоянный личественный 
 							</div>
@@ -303,7 +306,7 @@
 	    <div id="map"></div>
 		<div class="map__box">
 			<div class="map__box__logo">
-				<a href="index.html" class="header__logo"><img src="img/logo.svg" alt="Inside Windows"></a>
+				<a href="index.html" class="header__logo"><img src="img/logo.png" alt="Inside Windows"></a>
   				<span class="header__title">INSIDE WINDOWS</span>	
 			</div>
 			<ul class="map__box__list">
@@ -323,11 +326,23 @@
 			</div>
 		</div>
 	</section>
+	
+	<div class="menu">
+	    <div class="menu__icon">
+	      <span></span>
+	      <span></span>
+	      <span></span>
+	      <span></span>
+	</div>
 
-
+	<script>
+		$(document).ready(function(){
+		    $(".menu__icon").click(function(){
+		        $(".menu").toggleClass("menu__open");
+		    });
+		});
+	</script>
 	<script src="js/myscript.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxrRBMl_qkoNWKnQzZNqgZDmhsMVLKMWo&callback=initMap"
-    async defer></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxrRBMl_qkoNWKnQzZNqgZDmhsMVLKMWo&callback=initMap" async defer></script>
   </body>
 </html>
