@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700%7CRoboto:400,700,900&amp;subset=cyrillic" rel="stylesheet">
-
+	<link rel="stylesheet" href="libs/owlcarousel/assets/owl.carousel.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
 
@@ -55,30 +56,41 @@
   	</nav>
 	
 	<section class="slider">
-		<ul class="slider__list">	
-			<li class="slide-1" style="display:none"><img src="img/slide-1.jpg" alt="Slide-1S"></li>
-			<li class="slide-2"><img src="img/slide-1.jpg" alt="Slide-1S"></li>
-			<li class="slide-3" style="display:none"><img src="img/slide-1.jpg" alt="Slide-1S"></li>
-		</ul>
+		<div class="slider__list owl-carousel header-carousel">	
+			<li class="slide-1"><img src="img/slide-1.jpg" alt="Slide-1S"></li>
+			<li class="slide-2"><img src="img/slide-1.jpg" alt="Slide-2S"></li>
+			<li class="slide-3"><img src="img/slide-1.jpg" alt="Slide-3S"></li>
+			<li class="slide-3"><img src="img/slide-1.jpg" alt="Slide-4S"></li>
+		</div>
 			<div class="slider__control">
-				<ul class="slider__control__slides">
-					<li class="slide-1" style="display:none">
-						<h2 class="slider__control__title">Заголовок</h2>
-						<div class="slider__control__text">Текст</div>
+				<ul class="slider__control__slides owl-carousel header-carousel">
+					<li class="slide-1">
+						<h2 class="slider__control__title">Доставка окон и установка от производителя</h2>
+						<div class="slider__control__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptatum, officiis velit nisi doloremque delectus quae animi mollitia neque veritatis.</div>
 					</li>
 					<li class="slide-2">
 						<h2 class="slider__control__title">Установка и доставка окон от производителя</h2>
 						<div class="slider__control__text">Равным образом укрепление и развитие структуры играет важную роль в формир овании дальнейших направлений развития. Богатый опыт консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании форм развития.</div>
 					</li>
+					<li class="slide-3">
+						<h2 class="slider__control__title">От производителя доставка и установка окон</h2>
+						<div class="slider__control__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus voluptas eum itaque. Excepturi quidem nihil, adipisci rerum possimus, veritatis sint sit, rem maiores deleniti aperiam nam similique hic ipsum provident?</div>
+					</li>
+					<li class="slide-4">
+						<h2 class="slider__control__title">От производителя установка окон и доставка</h2>
+						<div class="slider__control__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus voluptas eum itaque. Excepturi quidem nihil, adipisci rerum possimus, veritatis sint sit, rem maiores deleniti aperiam nam similique hic ipsum provident?</div>
+					</li>
 				</ul>
 				<ul class="slider__control__indicators">
-					<li><a href="#">1</a></li>
-					<li class="active"><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
+					<li class="owl-dot"><a href="#">1</a></li>
+					<li class="owl-dot"><a href="#">2</a></li>
+					<li class="owl-dot"><a href="#">3</a></li>
+					<li class="owl-dot"><a href="#">4</a></li>
 				</ul>
-				<button class="slider__control__button slider__control__button--left">Left</button>
-				<button class="slider__control__button slider__control__button--right">Right</button>
+				<div class="owl-nav">
+					<button class="slider__control__button slider__control__button--left">Left</button>
+					<button class="slider__control__button slider__control__button--right">Right</button>
+				</div>
 			</div>
 	</section>
 
@@ -117,13 +129,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="video__title">
-						Видео
-					</h2>
+					<h2 class="video__title">Видео</h2>
 				</div>
-
 				<div class="w-100"></div>
-
 				<div class="col-md-12">
 					<ul class="video__list d-flex justify-content-between">
 						<li>
@@ -149,9 +157,7 @@
 						</li>
 					</ul>
 				</div>
-
 				<div class="w-100"></div>
-
 				<div class="col-md-12">
 					<div class="video__slider">
 						<div class="video__slider__gray"></div>
@@ -197,60 +203,58 @@
 					</ul>
 				</div>
 				<div class="w-100"></div>
-				<div class="col-sm-6 col-lg-3">
-					<div class="catalog__item">
-						<figure class="catalog__item__img"><img src="img/catalog-img-1.jpg" alt="Окно Глухое"></figure>
-						<ul class="catalog__item__imgs">
-							<li><a href="#"><img src="img/sm-img-1.jpg" alt="Окно Глухое"></a></li>
-							<li><a href="#"><img src="img/sm-img-2.jpg" alt="Окно Глухое"></a></li>
-							<li><a href="#"><img src="img/sm-img-3.jpg" alt="Окно Глухое"></a></li>
-						</ul>
-						<a href="#" class="catalog__item__link">Окно глухое</a>
-						<p class="catalog__item__price">от <b>3 000</b> грн</p>
-						<div class="catalog__item__calc"><a href="#" class="btn btn--calc">Калькулятор</a></div>
-					</div>
+				<div class="col-md-12">
+					<div class="owl-carousel catalog-carousel">
+						<div class="catalog__item">
+							<figure class="catalog__item__img"><img src="img/catalog-img-1.jpg" alt="Окно Глухое"></figure>
+							<ul class="catalog__item__imgs">
+								<li><a href="#"><img src="img/sm-img-1.jpg" alt="Окно Глухое"></a></li>
+								<li><a href="#"><img src="img/sm-img-2.jpg" alt="Окно Глухое"></a></li>
+								<li><a href="#"><img src="img/sm-img-3.jpg" alt="Окно Глухое"></a></li>
+							</ul>
+							<a href="#" class="catalog__item__link">Окно глухое</a>
+							<p class="catalog__item__price">от <b>3 000</b> грн</p>
+							<div class="catalog__item__calc"><a href="#" class="btn btn--calc">Калькулятор</a></div>
+						</div>
+						<div class="catalog__item">
+							<figure class="catalog__item__img"><img src="img/catalog-img-2.jpg" alt="Окно Глухое"></figure>
+							<ul class="catalog__item__imgs">
+								<li><a href="#"><img src="img/sm-img-1.jpg" alt="Окно Глухое"></a></li>
+								<li><a href="#"><img src="img/sm-img-2.jpg" alt="Окно Глухое"></a></li>
+								<li><a href="#"><img src="img/sm-img-3.jpg" alt="Окно Глухое"></a></li>
+							</ul>
+							<a href="#" class="catalog__item__link">Окно глухое</a>
+							<p class="catalog__item__price">от <b>5 000</b> грн</p>
+							<div class="catalog__item__calc"><a href="#" class="btn btn--calc">Калькулятор</a></div>
+						</div>					
+						<div class="catalog__item">
+							<figure class="catalog__item__img"><img src="img/catalog-img-1.jpg" alt="Окно Глухое"></figure>
+							<ul class="catalog__item__imgs">
+								<li><a href="#"><img src="img/sm-img-1.jpg" alt="Окно Глухое"></a></li>
+								<li><a href="#"><img src="img/sm-img-2.jpg" alt="Окно Глухое"></a></li>
+								<li><a href="#"><img src="img/sm-img-3.jpg" alt="Окно Глухое"></a></li>
+							</ul>
+							<a href="#" class="catalog__item__link">Окно глухое</a>
+							<p class="catalog__item__price">от <b>3 000</b> грн</p>
+							<div class="catalog__item__calc"><a href="#" class="btn btn--calc">Калькулятор</a></div>
+						</div>					
+						<div class="catalog__item">
+							<figure class="catalog__item__img"><img src="img/catalog-img-2.jpg" alt="Окно Глухое"></figure>
+							<ul class="catalog__item__imgs">
+								<li><a href="#"><img src="img/sm-img-1.jpg" alt="Окно Глухое"></a></li>
+								<li><a href="#"><img src="img/sm-img-2.jpg" alt="Окно Глухое"></a></li>
+								<li><a href="#"><img src="img/sm-img-3.jpg" alt="Окно Глухое"></a></li>
+							</ul>
+							<a href="#" class="catalog__item__link">Окно глухое</a>
+							<p class="catalog__item__price">от <b>5 000</b> грн</p>
+							<div class="catalog__item__calc"><a href="#" class="btn btn--calc">Калькулятор</a></div>
+						</div>
+					</div>				
 				</div>
-				<div class="col-sm-6 col-lg-3">
-					<div class="catalog__item">
-						<figure class="catalog__item__img"><img src="img/catalog-img-2.jpg" alt="Окно Глухое"></figure>
-						<ul class="catalog__item__imgs">
-							<li><a href="#"><img src="img/sm-img-1.jpg" alt="Окно Глухое"></a></li>
-							<li><a href="#"><img src="img/sm-img-2.jpg" alt="Окно Глухое"></a></li>
-							<li><a href="#"><img src="img/sm-img-3.jpg" alt="Окно Глухое"></a></li>
-						</ul>
-						<a href="#" class="catalog__item__link">Окно глухое</a>
-						<p class="catalog__item__price">от <b>5 000</b> грн</p>
-						<div class="catalog__item__calc"><a href="#" class="btn btn--calc">Калькулятор</a></div>
-					</div>					
+				<div class="owl-nav">
+					<button class="slide__btn__left left" type="button">Left</button>
+					<button class="slide__btn__right right" type="button">Right</button>
 				</div>
-				<div class="col-sm-6 col-lg-3">
-					<div class="catalog__item">
-						<figure class="catalog__item__img"><img src="img/catalog-img-1.jpg" alt="Окно Глухое"></figure>
-						<ul class="catalog__item__imgs">
-							<li><a href="#"><img src="img/sm-img-1.jpg" alt="Окно Глухое"></a></li>
-							<li><a href="#"><img src="img/sm-img-2.jpg" alt="Окно Глухое"></a></li>
-							<li><a href="#"><img src="img/sm-img-3.jpg" alt="Окно Глухое"></a></li>
-						</ul>
-						<a href="#" class="catalog__item__link">Окно глухое</a>
-						<p class="catalog__item__price">от <b>3 000</b> грн</p>
-						<div class="catalog__item__calc"><a href="#" class="btn btn--calc">Калькулятор</a></div>
-					</div>					
-				</div>
-				<div class="col-sm-6 col-lg-3">
-					<div class="catalog__item">
-						<figure class="catalog__item__img"><img src="img/catalog-img-2.jpg" alt="Окно Глухое"></figure>
-						<ul class="catalog__item__imgs">
-							<li><a href="#"><img src="img/sm-img-1.jpg" alt="Окно Глухое"></a></li>
-							<li><a href="#"><img src="img/sm-img-2.jpg" alt="Окно Глухое"></a></li>
-							<li><a href="#"><img src="img/sm-img-3.jpg" alt="Окно Глухое"></a></li>
-						</ul>
-						<a href="#" class="catalog__item__link">Окно глухое</a>
-						<p class="catalog__item__price">от <b>5 000</b> грн</p>
-						<div class="catalog__item__calc"><a href="#" class="btn btn--calc">Калькулятор</a></div>
-					</div>					
-				</div>
-				<button class="slide__btn__left left" type="button">Left</button>
-				<button class="slide__btn__right right" type="button">Right</button>
 			</div>
 		</div>
 	</section>
@@ -335,7 +339,8 @@
 			<span></span>
 		</div>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="libs/owlcarousel/owl.carousel.min.js"></script>
 	<script src="js/my-script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxrRBMl_qkoNWKnQzZNqgZDmhsMVLKMWo&callback=initMap"  async defer></script>
   </body>

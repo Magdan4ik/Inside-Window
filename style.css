@@ -272,6 +272,7 @@ a.btn, button.btn {
 	height: 160px;
 	padding: 18px 30px;
 	border-top: 4px solid #43a827;
+	z-index: 1;
 }
 
 .slider__control__slides {
@@ -418,6 +419,7 @@ a.btn, button.btn {
 	background-color: #fff;
 	margin: -50px 0 0 0;
 	overflow: hidden;
+	z-index: 2;
 }
 
 .order__bg::before {
@@ -1032,6 +1034,24 @@ a.btn--calc {
 		display: none;
 	}
 
+	.catalog__item__img {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	}
+
+	a.btn--calc {
+    	padding: 4px 25px 0 25px;
+    }
+
+    .catalog .slide__btn__left.left, 
+    .catalog .slide__btn__right.right {
+    	display: none;
+    }
+
 
 	.benefit {
 		min-height: 270px;
@@ -1127,6 +1147,10 @@ a.btn--calc {
 		display: none;
 	}
 
+	.order__bg::before {
+		display: none;
+	}
+
 	.order__list {
 		align-items: baseline !important;
 	}
@@ -1142,7 +1166,7 @@ a.btn--calc {
 	}
 
 	.slider {
-		height: 250px;
+		height: 185px;
 		overflow: hidden;
 	}
 
@@ -1151,12 +1175,16 @@ a.btn--calc {
 		width: auto;
 	}
 
+	.owl-carousel .owl-item img {
+		width: auto !important;
+	}
+
 	.slider__control {
 		right: 50%;
-		width: 250px;
+		width: 300px;
 		height: 160px;
 		padding: 10px 20px;
-		margin-right: -125px;
+		margin-right: -150px;
 	}
 
 	.slider__control__title {
@@ -1176,11 +1204,6 @@ a.btn--calc {
 	.catalog {
     	padding-bottom: 20px;
     }
-
-	.catalog .slide__btn__left, 
-	.catalog .slide__btn__right {
-		display: none;
-	}
 
     .catalog__filters {
 		flex-wrap: wrap;
@@ -1363,7 +1386,7 @@ a.btn--calc {
 	}
 
 	.slider {
-		height: 350px;
+		height: 200px;
 		overflow: hidden;
 	}
 

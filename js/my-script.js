@@ -1,3 +1,74 @@
+  // SLIDER
+
+  $(document).ready(function() {
+
+      var owl1 = $(".header-carousel").owlCarousel({
+        items: 1,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true, 
+        dots: true, // показывать dots навигацию.
+        loop: true, //постоянная прокрутка,
+        mouseDrag: false,
+        dotsContainer: '.slider__control__indicators' //контейнер для dots пагинации
+       });
+
+      $('.owl-dot').click(function(){
+        owl1.trigger('to.owl.carousel', [$(this).index(), 300]);
+      });
+
+      var owl1 = $('.header-carousel');
+        owl1.owlCarousel();
+        // Parameters has to be in square bracket '[500-speed]'
+        $('.slider__control__button--right').click(function() {
+            owl1.trigger('next.owl.carousel', [500]);
+        })
+        $('.slider__control__button--left').click(function() {
+            owl1.trigger('prev.owl.carousel', [500]);
+        })
+       
+
+
+      var owl2 = $(".catalog-carousel").owlCarousel({
+          items: 4,
+          dots: true, // показывать dots навигацию.
+          loop: true, //постоянная прокрутка,
+          margin: 30,
+          responsive:{
+                0:{
+                    items:1,
+                    stagePadding: 30,  // отступ на мобильных
+                    margin: 10 // отступ на мобильных
+                },
+
+                576:{
+                    items:2
+                },
+
+                768:{
+                    items:3
+                },
+                992:{
+                    items:4
+                }
+            }
+       });
+
+      var owl2 = $('.catalog-carousel');
+        owl2.owlCarousel();
+        // Parameters has to be in square bracket '[500-speed]'
+        $('.slide__btn__right').click(function() {
+            owl2.trigger('next.owl.carousel', [500]);
+        })
+        $('.slide__btn__left').click(function() {
+            owl2.trigger('prev.owl.carousel', [500]);
+        })
+       
+    });
+
+
+
+
 
 // GOOGLE MAP
       function initMap() {
