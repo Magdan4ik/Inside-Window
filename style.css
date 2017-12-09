@@ -786,13 +786,13 @@ a.btn--calc {
 	transform: rotate(180deg);
 }
 
-.slide__btn__left.left,
-.slide__btn__right.right{
+.slide-cat-left,
+.slide-cat-right {
 	position: absolute;
 	top: 50%;
 	margin-top: 80px;
 }
-.slide__btn__left.left {
+.slide-cat-left {
 	left: -15px;
 }
 
@@ -833,13 +833,34 @@ a.btn--calc {
 	align-items: center;
 	list-style-type: none;
 	margin-top: 15px;
-	padding: 0;
+	padding-left: 0;
 	font-size: 0;
 }
 
-.popular__left__imgs li {
-	margin-right: 10px;
+.popular__left__imgs__container {
+	position: relative;
+	padding: 0 20px;
 }
+
+.slide-pop-left,
+.slide-pop-right {
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+}
+
+.slide-pop-left {
+	left: -7px;
+}
+
+.slide-pop-right {
+	right: -3px;
+}
+
+.popular__left__imgs li {
+	margin: 0 5px;
+}
+
 
 .popular__left__imgs a {
 	font-size: 0;
@@ -1047,8 +1068,8 @@ a.btn--calc {
     	padding: 4px 25px 0 25px;
     }
 
-    .catalog .slide__btn__left.left, 
-    .catalog .slide__btn__right.right {
+    .catalog .slide-cat-left, 
+    .catalog .slide-cat-right {
     	display: none;
     }
 
@@ -1065,6 +1086,7 @@ a.btn--calc {
 	.benefit__time li span {
 		font-size: 36px;
 	}
+
 
 	.popular__left__title {
 		margin-top: 15px;
@@ -1175,10 +1197,6 @@ a.btn--calc {
 		width: auto;
 	}
 
-	.owl-carousel .owl-item img {
-		width: auto !important;
-	}
-
 	.slider__control {
 		right: 50%;
 		width: 300px;
@@ -1255,6 +1273,10 @@ a.btn--calc {
 		max-height: 29px;
 	}
 
+	.popular__left {
+		margin: 0 15px;
+	}
+
 	.popular__left__img {
 		margin: auto;
 	}
@@ -1328,10 +1350,6 @@ a.btn--calc {
 
 	.popular__left__imgs {
 		justify-content: center;
-	}
-
-	.popular__left__imgs li {
-		margin-right: 15px;
 	}
 	
 	.popular__left__title {
@@ -1482,20 +1500,16 @@ a.btn--calc {
 		margin-bottom: 20px;
 	}
 
-	.catalog__item__imgs {
-		margin: 17px 25px;
-	}
-
-	.slide__btn__left.left, 
-	.slide__btn__right.right {
+	.slide-cat-left, 
+	.slide-cat-right {
 		margin-top: 60px;
 	}
 
-	.slide__btn__right.right {
+	.slide-cat-right {
     	right: -10px;
 	}
 
-	.slide__btn__left.left {
+	.slide-cat-left {
     	left: -10px;
 	}
 
@@ -1580,11 +1594,11 @@ a.btn--calc {
 		left: -135px;
 	}
 
-	.slide__btn__left.left {
+	.slide-cat-left{
     	left: -10px;
 	}
 
-	.slide__btn__right.right {
+	.slide-cat-right {
     	right: -10px;
 	}
 

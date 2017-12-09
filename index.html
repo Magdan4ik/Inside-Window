@@ -252,8 +252,8 @@
 					</div>				
 				</div>
 				<div class="owl-nav">
-					<button class="slide__btn__left left" type="button">Left</button>
-					<button class="slide__btn__right right" type="button">Right</button>
+					<button class="slide__btn__left slide-cat-left" type="button">Left</button>
+					<button class="slide__btn__right slide-cat-right" type="button">Right</button>
 				</div>
 			</div>
 		</div>
@@ -269,14 +269,19 @@
 				<div class="col-md-7 popular__left">
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
-								<figure class="popular__left__img"><img src="img/popular-img.jpg" alt="Популярное"></figure>
-								<ul class="popular__left__imgs">
-									<li><button type="button" class="slide__btn__left "></button></li>
-									<li><a href="#"><img src="img/popular-sm-1.jpg" alt="Популярное"></a></li>
-									<li><a href="#"><img src="img/popular-sm-2.jpg" alt="Популярное"></a></li>
-									<li><a href="#"><img src="img/popular-sm-3.jpg" alt="Популярное"></a></li>
-									<li><button type="button" class="slide__btn__right"></button></li>
-								</ul>
+								<figure class="popular__left__img"><img src="img/popular-img.jpg" alt="Популярное" id="pop-big_img"></figure>
+								<div class="popular__left__imgs__container"> 
+									<ul class="popular__left__imgs owl-carousel popular-carousel">
+										<li><a href="img/popular-sm-1.jpg" onclick="swap(this); return false;"><img src="img/popular-sm-1.jpg" alt="Популярное"></a></li>
+										<li><a href="img/popular-sm-2.jpg" onclick="swap(this); return false;"><img src="img/popular-sm-2.jpg" alt="Популярное"></a></li>
+										<li><a href="img/popular-sm-3.jpg" onclick="swap(this); return false;"><img src="img/popular-sm-3.jpg" alt="Популярное"></a></li>
+									</ul>
+									<div class="owl-nav">
+										<button type="button" class="slide__btn__left slide-pop-left"></button>
+										<button type="button" class="slide__btn__right slide-pop-right"></button>
+									</div>
+								</div> 
+
 						</div>
 						<div class="col-sm-12 col-md-6 pl-0">
 							<a class="popular__left__title" href="#">Таким образом реализация намеченных плановых заданий способствует подготовки и реализации дальнейших направлений развития.</a>

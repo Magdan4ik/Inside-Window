@@ -57,17 +57,49 @@
       var owl2 = $('.catalog-carousel');
         owl2.owlCarousel();
         // Parameters has to be in square bracket '[500-speed]'
-        $('.slide__btn__right').click(function() {
+        $('.slide-cat-right').click(function() {
             owl2.trigger('next.owl.carousel', [500]);
         })
-        $('.slide__btn__left').click(function() {
+        $('.slide-cat-left').click(function() {
             owl2.trigger('prev.owl.carousel', [500]);
+        })
+
+
+
+
+      var owl3 = $(".popular-carousel").owlCarousel({
+          items: 3,
+          dots: true, // показывать dots навигацию.
+          loop: true, //постоянная прокрутка,
+          responsive:{
+                0:{
+                    items:2,
+                },
+
+                500:{
+                    items:3
+                },
+            }
+       });
+
+      var owl3 = $('.popular-carousel');
+        owl3.owlCarousel();
+        // Parameters has to be in square bracket '[500-speed]'
+        $('.slide-pop-right').click(function() {
+            owl3.trigger('next.owl.carousel', [500]);
+        })
+        $('.slide-pop-left').click(function() {
+            owl3.trigger('prev.owl.carousel', [500]);
         })
        
     });
 
 
 
+//CHANGE SMALL IMG IM BIG
+function swap(image) {
+  document.getElementById("pop-big_img").src = image.href;
+}
 
 
 // GOOGLE MAP
