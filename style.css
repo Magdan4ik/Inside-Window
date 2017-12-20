@@ -1153,7 +1153,7 @@ a.btn--calc {
 		min-height: 0;
 	}
 	
-	.header-carousel .owl-carousel .owl-item img {
+	.slider .owl-carousel .owl-item img {
 		min-height: 200px;
 		width: auto;
 	}
